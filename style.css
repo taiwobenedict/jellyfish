@@ -101,6 +101,10 @@
 }
 
 /* Defaults */
+button, .toggler {
+  border: none;
+}
+
 img {
   width: 100%;
 }
@@ -374,4 +378,8 @@ body {
   color: var(--pri-bg);
   padding: 5px 0;
   margin-top: 4rem;
+}
+
+#footer h3 {
+  font-size: 14px;
 }
