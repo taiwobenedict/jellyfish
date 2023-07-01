@@ -205,7 +205,6 @@ body {
 
 .hero-image {
   width: 247.85px;
-  height: 200px;
   margin: 0 auto;
 }
 
@@ -221,7 +220,6 @@ body {
 /* About */
 .about-image {
   width: 230.390px;
-  height: 229.1px;
   margin: 2rem auto;
 }
 
@@ -243,7 +241,6 @@ body {
 
 .intro-image {
   width: 236.178px;
-  height: 208px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -257,7 +254,6 @@ body {
 .tokenomics-image {
   margin: 0 auto;
   max-width: 398px;
-  height: 216.413px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,3 +379,122 @@ body {
 #footer h3 {
   font-size: 14px;
 }
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #home,
+  #about,
+  #intro .thick-card,
+  #features,
+  #tokenomics ul,
+  #why,
+  #subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 58.24px;
+  }
+
+  /* Hero */
+  .hero-content .title {
+    font-size: 3.5rem;
+    line-height: 60.66px;
+  }
+
+  /* Tokenomics */
+  .tokenomics-image {
+    max-width: 800px;
+  }
+
+  #tokenomics ul {
+    flex-wrap: wrap;
+  }
+  
+  .subscribe-content .title {
+    text-align: left;
+  }
+
+  .button-container {
+    max-width: 100%;
+  }
+
+  @keyframes subscribe {
+  0% {
+    left: 50px;
+  }
+
+  50% {
+    left: 92%;
+  }
+
+  100% {
+    left: 50px;
+  }
+}
+
+/* Roadmap */
+.phases {
+  display: flex;
+  padding-top: 40px;
+  
+}
+  .phases h3 {
+    background-color: var(--sec-col);
+    color: var(--light);
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 1.05rem;
+
+  }
+
+  .phase {
+    position: relative;
+  
+    
+  }
+
+  .phase::before {
+    content:"" ;
+    height: 100px;
+    width: 7px;
+    background-color: var(--pri-col);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .phase::after {
+    content: "Q2 - 2023";
+    background: -webkit-linear-gradient(left, var(--pri-col) 50%, var(--light) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -35px;
+    right: -40px;
+    ;font: 700 1.25rem/112% Poppins, sans-serif;
+    
+  }
+
+
+  .phase:first-child h3 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .phase:last-child h3 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .phase:last-child::before,
+  .phase:last-child::after {
+    display: none;
+  }
+
+ }
