@@ -290,40 +290,31 @@ body {
   background: rgba(138, 43, 226, 0.16);
   backdrop-filter: blur(8px);
   border: solid 1px var(--light-gray);
-  position: relative;
-  overflow: hidden;
-  max-width: 397px;
-  height: 39px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+input {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--light);
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 0px 20px;
+  outline: none;
+  
 }
 
 .email-button {
   border: none;
   background-color: #8a2be2;
   color: #100e34;
-  animation: subscribe 10s linear infinite;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.email-button:hover {
-  animation-play-state: paused;
-}
-
-@keyframes subscribe {
-  0% {
-    left: 50px;
-  }
-
-  50% {
-    left: 87%;
-  }
-
-  100% {
-    left: 50px;
-  }
-}
 
 /* Roadmap */
 .phase-title {
