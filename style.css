@@ -522,4 +522,11 @@ body {
   .phase:last-child::after {
     display: none;
   }
+
+  .chart-image {
+    max-width: 800px;
+    margin: 2rem auto 2rem auto;
+    
+    
+  }
 }
