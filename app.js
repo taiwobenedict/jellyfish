@@ -1,3 +1,8 @@
+// Initializing scolling effect
+AOS.init({
+   duration: 1000,
+ });
+
 // Smooth scrolling
 $("nav a").on("click", function (e) {
   e.preventDefault();

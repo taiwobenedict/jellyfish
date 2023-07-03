@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>JellyFish</title>
 </head>
@@ -40,7 +41,7 @@
 
     <div class="container">
         <!-- Hero section -->
-        <div id="home" class="col-10 mx-auto">
+        <div id="home" class="col-10 mx-auto" data-aos="zoom-in">
             <div class="hero-content col-lg-8">
                 <h1 class="title">Redefining Mobile Connectivity</h1>
                 <p class="hero-text p-text">Experience the Power of the Web3 Ecosystem on Your Mobile Device and Unlock a New Era of Possibilities</p>
@@ -54,7 +55,7 @@
         </div>
 
         <!-- Services -->
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row services mt-5">
                 <div class="col-md-4 my-2 border-wrapper">
                     <div class="thick-card">
@@ -80,10 +81,10 @@
         <!-- About -->
         <div class="container">
             <div id="about" class="py-5">
-                <div class="about-image col-md-4">
+                <div class="about-image col-md-4" data-aos="fade-right">
                     <img src="images/about.png" alt="about-image">
                 </div>
-                <div class="about-content col-lg-8">
+                <div class="about-content col-lg-8"  data-aos="fade-left">
                     <h1 class="title">About JellyFish</h1>
                     <p class="about-text">
                         JellyFish is a groundbreaking mobile virtual network operator (MVNO) that seamlessly integrates web3 technologies with mobile connectivity. Our mission is to revolutionize the way you experience the internet and access online services. 
@@ -98,15 +99,15 @@
         <!-- Intro -->
         <div class="container">
             <div id="intro" class="py-5">
-                <div class="thick-card">
-                    <div class="intro-content col-lg-8">
+                <div class="thick-card"  data-aos="fade-up">
+                    <div class="intro-content col-lg-8" data-aos="zoom-in">
                         <h1 class="title">Introducing the 5G Web3 Sim Card</h1>
                         <h3 class="intro-subtitle">with true private cold wallet</h3>
                         <p class="intro-text">
                             Introducing the revolutionary 5G Web3 SIM card with true private cold wallet, exclusively available with JellyFish Mobile. Our innovative solution ensures that your wallet address remains completely private, allowing you to confidently send and receive crypto assets without compromising your cold wallet's security. Fortified against SIM swap attacks and giving you full control over your mobile experience, JellyFish Mobile prioritizes your privacy and security.
                         </p>
                     </div>
-                    <div class="intro-image col-lg-4">
+                    <div class="intro-image col-lg-4" data-aos="zoom-in">
                         <img src="images/intro.png" alt="intro-image">
                     </div>
                 </div>
@@ -116,7 +117,7 @@
         <!-- Features -->
         <div class="container">
             <div id="features" class="mt-5 py-5">
-                <div class="feature-contents col-lg-8">
+                <div class="feature-contents col-lg-8" data-aos="fade-right">
                     <h1 class="title text-left">Features of <br> <span class="pri-color">JellyFish Mobile</span></h1>
                     <ul class="mt-2">
                         <li class="feature-text">AES128 Encryption: Your data is protected with state-of-the-art encryption technology.</li>
@@ -128,7 +129,7 @@
                         <li class="feature-text">Cold Wallet Address Obfuscation: Enhance your privacy with obfuscated cold wallet addresses.</li>
                     </ul>
                 </div>
-                <div class="feature-image col-lg-4 d-none d-lg-block">
+                <div class="feature-image col-lg-4 d-none d-lg-block"  data-aos="fade-left">
                     <img src="images/feature.png" alt="feature-image">
                 </div>
             </div>
@@ -137,11 +138,13 @@
         <!-- Ecosystem -->
         <div class="container">
             <div id="ecosystem" class="py-5">
-                <div class="thick-card">
-                    <h1 class="title">Ecosystem</h1>
-                    <p class="eco-text">
-                        The JellyFish ecosystem is your ultimate destination for connecting influencers with brands and monetizing their online presence. Seamlessly manage transactions through our built-in hardware-based wallet. Merchants benefit from purchasing JFish tokens, which offer discounts on transaction fees and enable affordable business interactions. Stay connected wherever you go with our affordable roaming service in Asia.
-                    </p>
+                <div class="thick-card"  data-aos="fade-up">
+                    <div class="eco-content" data-aos="zoom-in">
+                        <h1 class="title">Ecosystem</h1>
+                        <p class="eco-text">
+                            The JellyFish ecosystem is your ultimate destination for connecting influencers with brands and monetizing their online presence. Seamlessly manage transactions through our built-in hardware-based wallet. Merchants benefit from purchasing JFish tokens, which offer discounts on transaction fees and enable affordable business interactions. Stay connected wherever you go with our affordable roaming service in Asia.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,17 +154,17 @@
             <div id="tokenomics" class="py-5">
 
                 <h1 class="title">Tokenomics</h1>
-                <div class="tokenomics-image mt-4">
+                <div class="tokenomics-image mt-4" data-aos="zoom-in">
                     <img src="images/tokenomics.png" alt="tokenomics-image">
                 </div>
-                <ul class="mt-4">
+                <ul class="mt-4" data-aos="fade-left">
                     <li class="tokenomic-text mx-3"><span>.</span> 1 Billion - Total Token Supply</li>
                     <li class="tokenomic-text mx-3"><span>.</span> 500k - Q4 Subs Target</li>
                     <li class="tokenomic-text mx-3"><span>.</span> 14 - Countries</li>
                     <li class="tokenomic-text mx-3"><span>.</span> 3 CEX to list JFish Token</li>
                     <li class="tokenomic-text mx-3"><span>.</span> $0.1 - Q4 Token price</li>
                 </ul>
-                <div class="chart-image d-lg-block d-none">
+                <div class="chart-image d-lg-block d-none" data-aos="fade-right">
                     <img src="images/chart.png" alt="chart-image">
                 </div>
             </div>
@@ -170,10 +173,10 @@
         <!-- Why -->
         <div class="container">
             <div id="why" class="py-5">
-                <div class="why-image col-lg-3">
+                <div class="why-image col-lg-3" data-aos="fade-right">
                     <img src="images/question.png" alt="why-image">
                 </div>
-                <div class="why-content col-lg-9">
+                <div class="why-content col-lg-9" data-aos="fade-left">
                     <h1 class="title">Why choose <br class="d-lg-none"> <span class="pri-color">JellyFish Mobile</span></h1>
                     <ul class="mt-3">
                         <li class="why-text">Unparalleled Security: Your Data and Funds are our Priority With advanced encryption, authentication protocols, and cold wallet isolation, JellyFish ensures the utmost security for your data and funds, prioritizing your privacy.</li>
@@ -190,19 +193,19 @@
         <!-- Subscribe -->
         <div class="container">
             <div id="subscribe" class="py-5">
-                <div class="subscribe-content col-lg-7">
+                <div class="subscribe-content col-lg-7" data-aos="fade-right">
                     <h1 class="title">Subscribe to get fresh update about <span class="pri-color">JellyFish Mobile</span></h1>
                     <p class="p-text">Embrace the Future of Mobile Connectivity and Experience the Power of Web3 with JellyFish - Join the Revolution Today!</p>
                 <div class="button-container mt-lg-3 d-none d-lg-flex">
-                    <input type="email">
+                    <input type="email"  placeholder="Enter your email">
                     <button class="button email-button" type="submit">Subscribe</button>
                 </div>
                 </div>
-                <div class="subscribe-image col-lg-5">
+                <div class="subscribe-image col-lg-5" data-aos="zoom-in">
                     <img src="images/email.png" alt="subscribe-image">
                 </div>
                 <div class="button-container d-lg-none">
-                   <input type="email">
+                   <input type="email" placeholder="Enter your email">
                     <button class="button email-button" type="submit">Subscribe</button>
                 </div>
             </div>
@@ -212,9 +215,9 @@
         <div class="container">
             <div id="roadmap" class="py-5">
                 <h1 class="title">Roadmap</h1>
-                <p class="roadmap-text">Check out our roadmap to discover the exciting milestones we have planned for the future. Stay tuned for upcoming features and enhancements that will further enhance your mobile experience.</p>
+                <p class="roadmap-text" data-aos="zoom-in">Check out our roadmap to discover the exciting milestones we have planned for the future. Stay tuned for upcoming features and enhancements that will further enhance your mobile experience.</p>
 
-                <div class="phases">
+                <div class="phases" data-aos="fade-up">
                     <!-- Phase one -->
                     <div class="phase my-3">
                         <h3 class="phase-title sec-color d-lg-none">Phase 01 - <span class="pri-color">Q2:23</span></h3>
@@ -286,25 +289,25 @@
                 <h1 class="title">FAQ</h1>
                 
                 <div class="faq-accordion">
-                    <div class="faq-item text-center">
+                    <div class="faq-item text-center" data-aos="fade-up">
                       <div class="faq-question thick-card phase-title mb-0">What is JellyFish</div>
                       <div class="ans-container">
                           <div class="faq-answer light-card">JellyFish is a mobile virtual network operator (MVNO) that integrates web3 technologies, offering a comprehensive web3 mobile experience.</div>
                       </div>
                     </div>
-                    <div class="faq-item text-center">
+                    <div class="faq-item text-center" data-aos="fade-up">
                       <div class="faq-question thick-card phase-title mb-0">How is my data protected?</div>
                       <div class="ans-container">
                           <div class="faq-answer light-card">We employ advanced encryption protocols such as AES128 to safeguard your data and prioritize your privacy.</div>
                       </div>
                     </div>
-                    <div class="faq-item text-center">
+                    <div class="faq-item text-center" data-aos="fade-up">
                       <div class="faq-question thick-card phase-title mb-0">Can I access decentralized finance (DeFi) applications?</div>
                       <div class="ans-container">
                           <div class="faq-answer light-card">Absolutely! JellyFish enables direct access to DeFi and CeFi applications, allowing you to engage with decentralized financial services.</div>
                       </div>
                     </div>
-                    <div class="faq-item text-center">
+                    <div class="faq-item text-center" data-aos="fade-up">
                       <div class="faq-question thick-card phase-title mb-0">How can I purchase JFish tokens?</div>
                       <div class="ans-container">
                           <div class="faq-answer light-card">JFish tokens can be purchased through our partner exchanges. Stay tuned for more details on token acquisition.</div>
@@ -337,5 +340,6 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="app.js"></script>
 </html>
